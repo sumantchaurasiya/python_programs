@@ -1,0 +1,27 @@
+SampleSet = {'bihar', 'U.P', 'M.P', 'Rajasthan', 'Gujarat', 'Delhi', 'A.P'}
+# print('State name :', SampleSet)
+"""a = SampleSet.copy()
+print('copy state name from Sample :', a)
+SampleSet.add('Haryana')
+print('State name with newly added state Haryana :', SampleSet)
+SampleSet.remove('Haryana')
+print('State name without Haryana :', SampleSet)
+SampleSet.discard('U.P')
+print('State name without U.P :', SampleSet)
+# SampleSet.clear()
+# print('clear set of state name :', SampleSet)
+"""
+
+"""# for loop
+print('Sample of state :', SampleSet)
+for state in SampleSet:
+    print(state)"""
+
+"""# while loop not best for set
+print('Sample of state :', SampleSet)
+no_state = len(SampleSet)
+state = 0
+while no_state > state:
+    print(SampleSet)
+    state += 1
+"""
