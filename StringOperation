@@ -1,0 +1,81 @@
+number = [2, 3, 14, 5, 6, 7, 8, 11]
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f']
+
+print("Complete number list :", number)
+
+print("Complete number list :", number[::])
+
+print("Get value at address point 2 :", number[2])
+
+print("Get value at first address point :", number[0])
+
+print("Get value at last address point :", number[-1])
+
+print("Slice of number from address point 2 to 4 :", number[2:5])
+
+print("Slice of number from address point 1 to 5 with step 2 :", number[1:6:2])
+
+print("Reverse number list :", number[::-1])
+
+
+# input by user
+
+length = len(number)
+address = int(input(f'enter address where you want between 0 to {length} : '))
+print(number[address])
+print('\n')
+
+
+# using for loop
+
+for x in number:
+    print(x)
+
+for x in alphabet:
+    print(x)
+    
+
+# using while loop
+
+address = 0
+length = len(number)
+while length > address:
+    print(number[address])
+    address += 1
+else:
+    print('work is done !!')
+
+
+address = 0
+length = len(alphabet)
+while length > address:
+    print(alphabet[address])
+    address += 1
+else:
+    print('work is done !!')
+    
+    
+# functions in list
+
+print(number)
+number.sort()
+print("sorted list", number)
+
+number.reverse()
+print("reverse list", number)
+
+number.pop()
+print("remove a number at last address from update list ", number)
+
+number.pop(4)
+print("remove a number at particular address 4 from update list ", number)
+
+number.remove(14)
+print("remove a  particular value 14 from update list ", number)
+
+number.append(45)
+# append function append only one number/ant thing at last position
+print('append a particular value 45 in list at last :', number)
+
+number.insert(2, 66)
+print("inserted a number 66 at address 2 : ", number)
