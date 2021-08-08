@@ -1,0 +1,19 @@
+age=input('Enter customer age : ')
+state = input('Enter customer state : ')
+state_lower = state.lower()
+if age.isdigit():
+    int_age = int(age)
+    if (state_lower == 'bihar') or (state_lower == 'gujrat') or (state_lower == 'kerla'):
+        print('Alcohal is "NOT" allowed')
+    elif (int_age >= 18) and (int_age < 110):
+        print('Alcohal is allowed ')
+    elif int_age >= 15:
+
+        if state_lower == 'goa':
+            print('Alcohal is allowed ')
+        else:
+            print('Alcohal is "NOT" allowed')
+    else:
+        print('Alcohal is "NOT" allowed ')
+else:
+    print('invalid entry ')
