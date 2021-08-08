@@ -1,0 +1,21 @@
+# FIRST METHOD
+line1,line2,line3=10,8,4
+if line1+line2>line3:
+    if line1+line3>line2:
+        if line2+line3>line1:
+            print("Trinagle must be formed")
+        else:
+            print('Triangle in not formed')
+    else:
+        print('Triangle in not formed')
+else:
+    print('Triangle in not formed')
+
+# SECOND METHOD
+l1=int(input('enter first line length :'))
+l2=int(input('enter second line length :'))
+l3=int(input('enter third line length :'))
+if l1+l2>l3 and l1+l3>l2 and l2+l3>l1 :
+    print("Triangle must be formed")
+else:
+    print("Triangle don't formed")
